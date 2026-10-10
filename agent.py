@@ -21,9 +21,10 @@ Path("data").mkdir(exist_ok=True)
 
 
 # Update default and allowed models to use Gemini 2.5
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 
 ALLOWED_MODELS = {
+    "gemini-3.5-flash-lite",
     "gemini-2.5-flash",
     "gemini-2.5-pro",
     "gemini-2.5-flash-lite", # Included the lite version if needed
